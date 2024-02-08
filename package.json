@@ -1,0 +1,40 @@
+{
+  "name": "algorithms-example",
+  "version": "1.0.0",
+  "description": "Example of algorithms developed in TypeScript, presented in the book \"Grokking Algorithms: An Illustrated Guide for Programmers and Other Curious People\" by Aditya Y. Bhargava.",
+  "main": "src/index.ts",
+  "scripts": {
+    "prepare": "husky",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "vitest run --passWithNoTests",
+    "test:ui": "vitest --ui",
+    "test:ci": "npm run test -- --coverage",
+    "test:staged": "vitest related --run",
+    "test:watch": "vitest --passWithNoTests",
+    "start": "tsx watch src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "18.6.0",
+    "@commitlint/config-conventional": "18.6.0",
+    "@types/node": "20.11.16",
+    "@vitest/coverage-v8": "1.2.2",
+    "@vitest/ui": "1.2.2",
+    "eslint": "8.56.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-config-standard-with-typescript": "43.0.1",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-n": "16.6.2",
+    "eslint-plugin-prettier": "5.1.3",
+    "eslint-plugin-promise": "6.1.1",
+    "eslint-plugin-vitest-globals": "1.4.0",
+    "husky": "9.0.10",
+    "lint-staged": "15.2.2",
+    "tsx": "4.7.0",
+    "typescript": "5.3.3",
+    "vite-tsconfig-paths": "4.3.1"
+  }
+}
